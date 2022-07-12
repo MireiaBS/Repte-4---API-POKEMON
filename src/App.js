@@ -1,12 +1,7 @@
 import React from 'react';
 import './App.css';
 import { useState, useEffect} from 'react';
-import {
-  BrowserRouter as router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Home from './components/HomeComponent';
 import Login from './components/LoginComponent';
 import SignUp from './components/SignUpComponent';
@@ -16,25 +11,7 @@ import NavComponent from './components/NavComponent';
 function App() {
 
   return (
-   
-        <>
-          <NavComponent />
-          <Home />
-       
-          <NavComponent />
-          <Login />
-        
-          <NavComponent />
-          <SignUp />
-        </>
-  )
-}
-
-
-export default App;
-/* 
-(
-    
+      <BrowserRouter>
       <Routes>
         <Route path="/"
           element={
@@ -62,6 +39,9 @@ export default App;
         />
 
       </Routes>
-    </BrowserRouter>
+        </BrowserRouter>
   )
-*/
+}
+
+
+export default App;

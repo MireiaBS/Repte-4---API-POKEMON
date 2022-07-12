@@ -21,8 +21,8 @@ const Login = ( {isIncluded} ) => {
         
     };
     return (
-        <div className="login-div">
-            <form onSubmit={handleSubmit} className='login'>
+        <div className="">
+            <form onSubmit={handleSubmit} className=''>
                 <input
                     className=""
                     type='text'
