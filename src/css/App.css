@@ -1,0 +1,343 @@
+body {
+    margin:1cm;
+    background-image: url('../images/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    justify-content: center;
+    width:fit-content;
+}
+.div-return {
+    display: flex;
+    justify-content: end;
+    margin-right: 2cm;
+    margin-top: 2cm;
+}
+.return {
+
+    width: 5cm;
+    height: 5cm;
+    position: absolute;
+}
+.links {
+    text-decoration: none;
+    color:black
+}
+.sub-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    width: 5cm;
+    padding: 10px;
+    border: solid 1px rgb(117, 113, 113);
+    background-color: rgb(241, 241, 232);
+    border-radius: 5px;
+    
+}
+
+.logo {
+    margin-top:1px;
+    width: 45%;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1cm;
+    padding-left:1cm;
+    padding-right: 1cm;
+}
+
+.margin {
+    padding: 10px;
+    border: solid 2px rgb(52, 11, 78);
+    background-color: rgba(238, 211, 248, 0.931);
+    border-radius:5px;
+    width: 100%
+}
+
+.boton {
+    font-size: large;
+    color: black;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    
+}
+.boton-play {
+    font-size: large;
+    color: black;
+    padding: 15px;
+    margin-left: 1cm;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    
+}
+
+.card {
+    padding: 10px;
+    border: solid 2px rgb(52, 11, 78);
+    background-color: rgba(238, 211, 248, 0.931);
+    border-radius:5px;
+    width: 100%;
+    
+}
+
+
+
+
+.all {
+    border: solid 2px black;
+}
+
+.all:hover{
+    background-color: black;
+    color:white;
+}
+.all:checked {
+    background-color: black;
+    color:white
+}
+
+.fire {
+    border: solid 2px red;
+}
+
+.fire:hover{
+    background-color: red;
+    color:white;
+}
+.fire:checked {
+    background-color: red;
+    color:white
+}
+
+.water {
+    border: solid 2px rgb(10, 165, 255);
+}
+
+.water:hover{
+    background-color:rgb(10, 165, 255);
+    color:white;
+}
+.water:active {
+    background-color:rgb(10, 165, 255);
+    color:white
+}
+
+.grass {
+    border: solid 2px rgb(38, 171, 5);
+}
+
+.grass:hover{
+    background-color: rgb(38, 171, 5);
+    color:white;
+}
+.grass:active {
+    background-color: rgb(38, 171, 5);
+    color:white
+}
+
+.electric {
+    border: solid 2px rgb(207, 170, 4);
+}
+
+.electric:hover{
+    background-color: rgb(207, 170, 4);
+    color:white
+}
+.electric:active {
+    background-color: rgb(207, 170, 4);
+    color:white
+}
+
+.normal {
+    border: solid 2px rgb(196, 179, 197);
+}
+
+.normal:hover{
+    background-color: rgb(196, 179, 197);
+    color:white;
+}
+.normal:active {
+    background-color: rgb(196, 179, 197);
+    color:white
+}
+.flying {
+    border: solid 2px rgb(3, 29, 94);
+}
+
+.flying:hover{
+    background-color: rgb(3, 29, 94);;
+    color:white;
+}
+.flying:active {
+    background-color: rgb(3, 29, 94);
+    color:white
+}
+
+.psychic {
+    border: solid 2px rgb(235, 81, 240);
+}
+
+.psychic:hover{
+    background-color: rgb(235, 81, 240);
+    color:white;
+}
+.psychic:active {
+    background-color: rgb(235, 81, 240);
+    color:white
+}
+.bug {
+    border: solid 2px rgb(10, 84, 15);
+}
+
+.bug:hover{
+    background-color: rgb(10, 84, 15);
+    color:white;
+}
+.bug:active {
+    background-color: rgb(10, 84, 15);
+    color:white
+}
+
+.rock {
+    border: solid 2px rgb(95, 53, 27);
+}
+
+.rock:hover{
+    background-color: rgb(95, 53, 27);
+    color:white;
+}
+.rock:active {
+    background-color: rgb(95, 53, 27);
+    color:white
+}
+
+.ghost {
+    border: solid 2px rgb(58, 43, 77);
+}
+
+.ghost:hover{
+    background-color: rgb(58, 43, 77);
+    color:white;
+}
+.ghost:active {
+    background-color: rrgb(58, 43, 77);
+    color:white
+}
+
+.ice {
+    border: solid 2px rgb(115, 234, 245);
+}
+
+.ice:hover{
+    background-color: rgb(115, 234, 245);
+    color:white;
+}
+.ice:active {
+    background-color: rgb(115, 234, 245);
+    color:white
+}
+
+.dark {
+    border: solid 2px rgb(26, 24, 34);
+}
+
+.dark:hover{
+    background-color:rgb(26, 24, 34);
+    color:white;
+}
+.dark:active {
+    background-color: rgb(26, 24, 34);;
+    color:white
+}
+
+.fighting {
+    border: solid 2px rgb(208, 94, 29);
+}
+
+.fighting:hover{
+    background-color: rgb(208, 94, 29);
+    color:white;
+}
+.fighting:active {
+    background-color: rgb(208, 94, 29);
+    color:white
+}
+
+.dragon {
+    border: solid 2px rgb(33, 81, 87);
+}
+
+.dragon:hover{
+    background-color: rgb(33, 81, 87);
+    color:white;
+}
+.dragon:active {
+    background-color: rgb(33, 81, 87);
+    color:white
+}
+
+.poison {
+    border: solid 2px rgb(139, 54, 250);
+}
+
+.poison:hover{
+    background-color: rgb(139, 54, 250);
+    color:white;
+}
+.poison:active {
+    background-color: rgb(139, 54, 250);
+    color:white
+}
+
+.steel {
+    border: solid 2px rgb(90, 111, 107);
+}
+
+.steel:hover{
+    background-color: rgb(90, 111, 107);
+    color:white;
+}
+.steel:active {
+    background-color: rgb(90, 111, 107);
+    color:white
+}
+
+.ground {
+    border: solid 2px rgb(201, 145, 54);
+}
+
+.ground:hover{
+    background-color: rgb(201, 145, 54);
+    color:white;
+}
+.ground:active {
+    background-color:rgb(201, 145, 54);
+    color:white
+}
+
+.fairy {
+    border: solid 2px rgb(230, 47, 102);
+}
+
+.fairy:hover{
+    background-color: rgb(230, 47, 102);
+    color:white;
+}
+.fairy:active {
+    background-color: rgb(230, 47, 102);
+    color:white
+}
+
