@@ -27,7 +27,7 @@ function App() {
   }
   
   useEffect(() => {
-    axios.get("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=898")
+    axios.get("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=89")
       .then((element) => {
         const list = element.data.results.map(element => element.url)
         const list2 = []
@@ -48,11 +48,11 @@ function App() {
   return (
       <BrowserRouter>
       <UserContext.Provider value={{pokeList , setPokeList , allPokemons}}>
-      {play ? <img className='boton-play' alt='boton-play' onClick={changePlay} src={Pausa} /> : <img className='boton-play' alt='boton-stop'onClick={changePlay} src={Play} />}
+      
       <Routes>
         <Route path="/"
           element={
-            <>
+            <>{play ? <img className='boton-play' alt='boton-play' onClick={changePlay} src={Pausa} /> : <img className='boton-play' alt='boton-stop'onClick={changePlay} src={Play} />}
               <NavComponent />
               <PokeListComponent />
             </>
@@ -73,3 +73,4 @@ function App() {
 
 
 export default App;
+

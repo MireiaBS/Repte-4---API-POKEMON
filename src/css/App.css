@@ -1,35 +1,39 @@
 body {
-    margin:1cm;
+    margin: 1cm;
     background-image: url('../images/fondo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment:fixed;
+    background-attachment: fixed;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .list {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
     justify-content: center;
-    width:fit-content;
+    width: fit-content;
 }
+
 .div-return {
     display: flex;
     justify-content: end;
     margin-right: 2cm;
     margin-top: 2cm;
 }
+
 .return {
 
-    width: 5cm;
-    height: 5cm;
+    width: 3cm;
+    height: 3cm;
     position: absolute;
 }
+
 .links {
     text-decoration: none;
-    color:black
+    color: black
 }
+
 .sub-list {
     display: flex;
     flex-direction: column;
@@ -40,11 +44,18 @@ body {
     border: solid 1px rgb(117, 113, 113);
     background-color: rgb(241, 241, 232);
     border-radius: 5px;
-    
+
+}
+h2 {
+ padding-left: 0.5cm;
+ margin-bottom: -0.5cm;
 }
 
+h1 {
+    font-size: 2.5cm;
+}
 .logo {
-    margin-top:1px;
+    margin-top: 1px;
     width: 45%;
 }
 
@@ -52,7 +63,7 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 1cm;
-    padding-left:1cm;
+    padding-left: 1cm;
     padding-right: 1cm;
 }
 
@@ -60,7 +71,7 @@ body {
     padding: 10px;
     border: solid 2px rgb(52, 11, 78);
     background-color: rgba(238, 211, 248, 0.931);
-    border-radius:5px;
+    border-radius: 5px;
     width: 100%
 }
 
@@ -70,8 +81,9 @@ body {
     padding: 15px;
     margin: 5px;
     border-radius: 10px;
-    
+
 }
+
 .boton-play {
     font-size: large;
     color: black;
@@ -81,263 +93,339 @@ body {
     width: 100px;
     height: 100px;
     position: absolute;
-    
+
 }
 
 .card {
-    padding: 10px;
-    border: solid 2px rgb(52, 11, 78);
-    background-color: rgba(238, 211, 248, 0.931);
-    border-radius:5px;
-    width: 100%;
-    
+    margin-top: -1cm;
+    padding: 2cm;
+    border: solid 6px rgb(21, 21, 23);
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+    display: block;
 }
 
+td {
+    padding: 0.5cm;
+}
 
+.margin-stats {
+    padding: 0.5cm;
+
+}
+
+.flex {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5cm;
+}
+.flex2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-card {
+    width: 45%;
+    height: 45%;
+}
+
+.title-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid 2px none;
+    background-color: rgba(187, 193, 195, 0.511);
+    border-radius: 8px;
+    margin-bottom: 1cm;
+}
+
+.div-datos {
+    border: solid 2px none;
+    
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.div-stats {
+    margin-top: 1cm;
+    border: solid 2px none;
+    
+    border-radius: 5px;
+    width: max-content;
+
+}
 
 
 .all {
     border: solid 2px black;
 }
 
-.all:hover{
+.all:hover {
     background-color: black;
-    color:white;
+    color: white;
 }
+
 .all:checked {
     background-color: black;
-    color:white
+    color: white
 }
 
 .fire {
     border: solid 2px red;
 }
 
-.fire:hover{
+.fire:hover {
     background-color: red;
-    color:white;
+    color: white;
 }
+
 .fire:checked {
     background-color: red;
-    color:white
+    color: white
 }
 
 .water {
     border: solid 2px rgb(10, 165, 255);
 }
 
-.water:hover{
-    background-color:rgb(10, 165, 255);
-    color:white;
+.water:hover {
+    background-color: rgb(10, 165, 255);
+    color: white;
 }
+
 .water:active {
-    background-color:rgb(10, 165, 255);
-    color:white
+    background-color: rgb(10, 165, 255);
+    color: white
 }
 
 .grass {
     border: solid 2px rgb(38, 171, 5);
 }
 
-.grass:hover{
+.grass:hover {
     background-color: rgb(38, 171, 5);
-    color:white;
+    color: white;
 }
+
 .grass:active {
     background-color: rgb(38, 171, 5);
-    color:white
+    color: white
 }
 
 .electric {
     border: solid 2px rgb(207, 170, 4);
 }
 
-.electric:hover{
+.electric:hover {
     background-color: rgb(207, 170, 4);
-    color:white
+    color: white
 }
+
 .electric:active {
     background-color: rgb(207, 170, 4);
-    color:white
+    color: white
 }
 
 .normal {
     border: solid 2px rgb(196, 179, 197);
 }
 
-.normal:hover{
+.normal:hover {
     background-color: rgb(196, 179, 197);
-    color:white;
+    color: white;
 }
+
 .normal:active {
     background-color: rgb(196, 179, 197);
-    color:white
+    color: white
 }
+
 .flying {
     border: solid 2px rgb(3, 29, 94);
 }
 
-.flying:hover{
-    background-color: rgb(3, 29, 94);;
-    color:white;
+.flying:hover {
+    background-color: rgb(3, 29, 94);
+    ;
+    color: white;
 }
+
 .flying:active {
     background-color: rgb(3, 29, 94);
-    color:white
+    color: white
 }
 
 .psychic {
     border: solid 2px rgb(235, 81, 240);
 }
 
-.psychic:hover{
+.psychic:hover {
     background-color: rgb(235, 81, 240);
-    color:white;
+    color: white;
 }
+
 .psychic:active {
     background-color: rgb(235, 81, 240);
-    color:white
+    color: white
 }
+
 .bug {
     border: solid 2px rgb(10, 84, 15);
 }
 
-.bug:hover{
+.bug:hover {
     background-color: rgb(10, 84, 15);
-    color:white;
+    color: white;
 }
+
 .bug:active {
     background-color: rgb(10, 84, 15);
-    color:white
+    color: white
 }
 
 .rock {
     border: solid 2px rgb(95, 53, 27);
 }
 
-.rock:hover{
+.rock:hover {
     background-color: rgb(95, 53, 27);
-    color:white;
+    color: white;
 }
+
 .rock:active {
     background-color: rgb(95, 53, 27);
-    color:white
+    color: white
 }
 
 .ghost {
     border: solid 2px rgb(58, 43, 77);
 }
 
-.ghost:hover{
+.ghost:hover {
     background-color: rgb(58, 43, 77);
-    color:white;
+    color: white;
 }
+
 .ghost:active {
     background-color: rrgb(58, 43, 77);
-    color:white
+    color: white
 }
 
 .ice {
     border: solid 2px rgb(115, 234, 245);
 }
 
-.ice:hover{
+.ice:hover {
     background-color: rgb(115, 234, 245);
-    color:white;
+    color: white;
 }
+
 .ice:active {
     background-color: rgb(115, 234, 245);
-    color:white
+    color: white
 }
 
 .dark {
     border: solid 2px rgb(26, 24, 34);
 }
 
-.dark:hover{
-    background-color:rgb(26, 24, 34);
-    color:white;
+.dark:hover {
+    background-color: rgb(26, 24, 34);
+    color: white;
 }
+
 .dark:active {
-    background-color: rgb(26, 24, 34);;
-    color:white
+    background-color: rgb(26, 24, 34);
+    ;
+    color: white
 }
 
 .fighting {
     border: solid 2px rgb(208, 94, 29);
 }
 
-.fighting:hover{
+.fighting:hover {
     background-color: rgb(208, 94, 29);
-    color:white;
+    color: white;
 }
+
 .fighting:active {
     background-color: rgb(208, 94, 29);
-    color:white
+    color: white
 }
 
 .dragon {
     border: solid 2px rgb(33, 81, 87);
 }
 
-.dragon:hover{
+.dragon:hover {
     background-color: rgb(33, 81, 87);
-    color:white;
+    color: white;
 }
+
 .dragon:active {
     background-color: rgb(33, 81, 87);
-    color:white
+    color: white
 }
 
 .poison {
     border: solid 2px rgb(139, 54, 250);
 }
 
-.poison:hover{
+.poison:hover {
     background-color: rgb(139, 54, 250);
-    color:white;
+    color: white;
 }
+
 .poison:active {
     background-color: rgb(139, 54, 250);
-    color:white
+    color: white
 }
 
 .steel {
     border: solid 2px rgb(90, 111, 107);
 }
 
-.steel:hover{
+.steel:hover {
     background-color: rgb(90, 111, 107);
-    color:white;
+    color: white;
 }
+
 .steel:active {
     background-color: rgb(90, 111, 107);
-    color:white
+    color: white
 }
 
 .ground {
     border: solid 2px rgb(201, 145, 54);
 }
 
-.ground:hover{
+.ground:hover {
     background-color: rgb(201, 145, 54);
-    color:white;
+    color: white;
 }
+
 .ground:active {
-    background-color:rgb(201, 145, 54);
-    color:white
+    background-color: rgb(201, 145, 54);
+    color: white
 }
 
 .fairy {
     border: solid 2px rgb(230, 47, 102);
 }
 
-.fairy:hover{
+.fairy:hover {
     background-color: rgb(230, 47, 102);
-    color:white;
-}
-.fairy:active {
-    background-color: rgb(230, 47, 102);
-    color:white
+    color: white;
 }
 
+.fairy:active {
+    background-color: rgb(230, 47, 102);
+    color: white
+}
