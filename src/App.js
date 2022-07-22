@@ -27,7 +27,7 @@ function App() {
   }
   
   useEffect(() => {
-    axios.get("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=89")
+    axios.get("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=898")
       .then((element) => {
         const list = element.data.results.map(element => element.url)
         const list2 = []

@@ -19,6 +19,8 @@ $npm install react-router-dom
 ### Codificación 
 
 Mediante AXIOS, he accedido a la API y así coger las información necesaria para sacar tanto el listado de Pokemons como sus atributos.
+La API utilizada ha sido: https://pokeapi.co/api/v2/pokemon/?offset=0&limit=898.
+
 A base de métodos, he sido filtrando el listado según el tipo de Pokemon que buscamos.
 
 He usado el useParams para nombrar correctamente las rutas al entrar a cada ficha, y el useContext para globalizar el listado de Pokemons
