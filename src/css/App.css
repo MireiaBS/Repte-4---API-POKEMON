@@ -7,6 +7,10 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.text {
+    font-size: 18px;
+
+}
 .list {
     display: flex;
     flex-direction: row;
@@ -35,6 +39,7 @@ body {
 }
 
 .sub-list {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,7 +57,9 @@ h2 {
 }
 
 h1 {
-    font-size: 2.5cm;
+    font-size: 2cm;
+    height:min-content ;
+    margin:0.5cm;
 }
 .logo {
     margin-top: 1px;
@@ -97,8 +104,8 @@ h1 {
 }
 
 .card {
-    margin-top: -1cm;
-    padding: 2cm;
+    margin-top: -1.5cm;
+    padding: 0.5cm;
     border: solid 6px rgb(21, 21, 23);
     background-color: rgb(221, 221, 221);
     border-radius: 10px;
@@ -107,6 +114,7 @@ h1 {
 
 td {
     padding: 0.5cm;
+    font-size: 15px;
 }
 
 .margin-stats {
@@ -127,8 +135,8 @@ td {
 }
 
 .img-card {
-    width: 45%;
-    height: 45%;
+    width: 30%;
+    height: 30%;
 }
 
 .title-card {
@@ -141,11 +149,12 @@ td {
     background-color: rgba(187, 193, 195, 0.511);
     border-radius: 8px;
     margin-bottom: 1cm;
+    height: min-content;
 }
 
-.div-datos {
-    border: solid 2px none;
-    
+.div-datos {   
+    border: solid 1px rgb(21, 21, 23);
+    background-color:rgb(231, 231, 231);     
     border-radius: 8px;
     display: flex;
     flex-direction: row;
@@ -154,12 +163,10 @@ td {
 
 .div-stats {
     margin-top: 1cm;
-    border: solid 2px none;
-    
-    border-radius: 5px;
-    width: max-content;
-
-}
+    border: solid 1px rgb(21, 21, 23);
+    background-color:rgb(231, 231, 231);    
+    border-radius: 8px;
+    width: max-content;}
 
 
 .all {

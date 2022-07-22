@@ -68,21 +68,21 @@ export const PokeCardComponent = () => {
             <div className='div-datos'>
               <div className='margin-stats'>
                 <h3>Height</h3>
-                <p>{pokemonCard.map(element => element.data.height)} ft.</p>
+                <p  className='text'>{pokemonCard.map(element => element.data.height)} ft.</p>
               </div>
               <div className='margin-stats'>
-                <h3>Abilities</h3>
-                <p>{pokemonCard.map(element => element.data.abilities
+                <h3 >Abilities</h3>
+                <p className='text'>{pokemonCard.map(element => element.data.abilities
                   .map(element =>
                     <p> {element.ability.name.charAt(0).toUpperCase() + element.ability.name.slice(1)}</p>))}</p>
               </div>
               <div className='margin-stats'>
                 <h3>Types</h3>
-                <p>{pokemonCard.map(element => element.data.types.map(element => <p> {element.type.name.charAt(0).toUpperCase() + element.type.name.slice(1)}</p>))}</p>
+                <p className='text'>{pokemonCard.map(element => element.data.types.map(element => <p> {element.type.name.charAt(0).toUpperCase() + element.type.name.slice(1)}</p>))}</p>
               </div>
               <div className='margin-stats'>
                 <h3>Weight</h3>
-                <p>{pokemonCard.map(element => element.data.weight)} lbs</p>
+                <p className='text'>{pokemonCard.map(element => element.data.weight)} lbs</p>
               </div>
 
             </div>
@@ -99,8 +99,9 @@ export const PokeCardComponent = () => {
 
         <div className='title-card'>
           <div>
+            
+            <div className='div-datos '>
             <h2>SPECIE INFORMATION</h2>
-            <div className='div-datos'>
               <div className='margin-stats'>
                 <h3>Name</h3>
                 <p>{pokemonCard.map(element => element.data.name.toUpperCase())}</p>

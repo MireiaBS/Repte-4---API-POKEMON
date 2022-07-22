@@ -11,7 +11,7 @@ export const PokeListComponent = () => {
     let text = newOrder.map((element,i) => 
     <Link className='links' to={`/pokemon/${element.data.name}`} key={i+'order'} >
       <div className='sub-list' >
-          <p >{element.data.name.toUpperCase()}</p>
+          <div>{element.data.name.toUpperCase()}</div>
           <img src={element.data.sprites.front_default} alt='PokeMon'/>
       </div> 
     </Link>)
