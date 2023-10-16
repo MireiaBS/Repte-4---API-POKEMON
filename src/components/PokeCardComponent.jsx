@@ -57,7 +57,7 @@ export const PokeCardComponent = () => {
     <>
       <Link to='/'>
         <div className='div-return'>
-          <img src={Atras} className='return' />
+          <img src={Atras} alt='' className='return' />
         </div>
       </Link>
 
@@ -93,7 +93,7 @@ export const PokeCardComponent = () => {
               </div>
             </div>
           </div>
-          <img src={pokemonCard.map(element => element.data.sprites.other.home.front_default)} className='img-card' />
+          <img src={pokemonCard.map(element => element.data.sprites.other.home.front_default)}alt='' className='img-card' />
         </div>
       
 

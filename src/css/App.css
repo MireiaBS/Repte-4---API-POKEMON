@@ -1,3 +1,5 @@
+
+
 body {
     margin: 1cm;
     background-image: url('../images/fondo.jpg');
@@ -5,6 +7,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
 }
 
 .text {
@@ -51,9 +54,9 @@ body {
     margin: 5px;
     width: 5cm;
     padding: 10px;
-    border: solid 1px rgb(117, 113, 113);
+    border: solid 3px rgb(92, 91, 91);
     background-color: rgb(241, 241, 232);
-    border-radius: 5px;
+    border-radius: 8px;
 
 }
 h2 {
@@ -98,19 +101,16 @@ h1 {
 h1 {
     color:white;
 }
-.botonPokedex {
-    color: rgb(7, 109, 92);
-    font-size: 300%;
-    font-weight: 600;
-    padding: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left:5cm;
-    border-radius: 35px;
-    background-color: white;
-    border: solid 3px rgb(7, 109, 92);
-    text-decoration: none;
-  
+
+.gifPokedex {
+    height: 80%;
+    width: 80%;
+    margin-left: 3cm;
+    transition: transform 0.3s;
+}
+
+.gifPokedex:hover {
+    transform: scale(1.1);
 }
 
 .returnPokedex {
@@ -120,17 +120,16 @@ h1 {
 }
 
 .allContainerPokedex {
+    margin-top: 1cm;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.972);   
+    background-color: rgba(0, 0, 0, 0.87);   
     border-radius: 35px;
     padding: 1cm;
+    min-height:100%;
 }
 
-.pokedex:hover {
-    background-color:rgb(7, 109, 92) ;
-    color:white
-}
+
 .divInputPregunta {
     width: 100%;
 }
@@ -515,8 +514,7 @@ td {
     color: white
 }
 
-.botonPokedex:hover {
+.sub-list:hover {
+    background-color:rgb(92, 91, 91);
     color:white;
-    background-color: rgb(7, 109, 92);
-
 }

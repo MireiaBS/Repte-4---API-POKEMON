@@ -11,7 +11,6 @@ import Musica from './music/pokemon.mp3'
 import Play from './images/play.png'
 import Pausa from './images/pausa.png'
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
 
 function App() {
 

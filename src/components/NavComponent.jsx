@@ -3,6 +3,7 @@ import {UserContext} from "../hooks/UserContext"
 import logo from '../images/logo.png'
 import '../css/App.css'
 import { Link } from 'react-router-dom'
+import pokedex from '../images/pokedex.gif'
 
 
 export const NavComponent = () => {
@@ -21,17 +22,13 @@ export const NavComponent = () => {
         id === 'all'? setPokeList(allPokemons) : console.log(null)
     
     }
-
-
     return (
-
-        <>  
-            <div className='div-pokedex'>
-               
-            </div>
+        <>              
             <div className='nav'>                
-                <img src={logo} alt='Logo PokeMon' className='logo' />  
-                <Link className='botonPokedex' to="/PokeDex" placeholder='pokedex' >PokéDex</Link>            
+                <img src={logo} alt='Logo PokeMon' className='logo' />                                           
+                <Link className='botonPokedex' to="/PokeDex" placeholder='pokedex' >
+                    <img src={pokedex} alt='PokeDex'  className='gifPokedex'/>  
+                </Link>                                    
             </div>
             <div className='nav'>
                 <input type='text' placeholder='Busca un Pokémon!' onChange={searchPokemon} className='margin'></input>

@@ -12,7 +12,11 @@ export const PokeListComponent = () => {
     <Link className='links' to={`/pokemon/${element.data.name}`} key={i+'order'} >
       <div className='sub-list' >
           <div>{element.data.name.toUpperCase()}</div>
-          <img src={element.data.sprites.front_default} alt='PokeMon'/>
+          <img
+          src={element.data.sprites.front_default}
+          alt='PokeMon'
+          loading="lazy" 
+        />
       </div> 
     </Link>)
     
