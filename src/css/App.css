@@ -68,10 +68,10 @@ h1 {
 
 .nav {
     display: flex;
-    justify-content: center;
     margin-bottom: 1cm;
     padding-left: 1cm;
-    padding-right: 1cm;
+    align-items: center;
+    justify-content: center;
 }
 
 .margin {
@@ -89,6 +89,27 @@ h1 {
     margin: 5px;
     border-radius: 10px;
 
+}
+h1 {
+    color:white;
+}
+.pokedex {
+    color: rgb(7, 109, 92);
+    font-size: 300%;
+    font-weight: 600;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left:5cm;
+    border-radius: 35px;
+    background-color: white;
+    border: solid 3px rgb(7, 109, 92);
+    text-decoration: none;
+  
+}
+.pokedex:hover {
+    background-color:rgb(7, 109, 92) ;
+    color:white
 }
 
 .boton-play {

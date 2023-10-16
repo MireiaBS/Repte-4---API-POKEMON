@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import {UserContext} from "../hooks/UserContext"
 import logo from '../images/logo.png'
 import '../css/App.css'
+import { Link } from 'react-router-dom'
 
 
 export const NavComponent = () => {
@@ -24,9 +25,13 @@ export const NavComponent = () => {
 
     return (
 
-        <>
-            <div className='nav'>
-                <img src={logo} alt='Logo PokeMon' className='logo' />
+        <>  
+            <div className='div-pokedex'>
+               
+            </div>
+            <div className='nav'>                
+                <img src={logo} alt='Logo PokeMon' className='logo' />  
+                <Link className='pokedex' to="/PokeDex" placeholder='pokedex' >PokéDex</Link>            
             </div>
             <div className='nav'>
                 <input type='text' placeholder='Busca un Pokémon!' onChange={searchPokemon} className='margin'></input>

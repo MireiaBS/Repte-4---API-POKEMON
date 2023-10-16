@@ -5,6 +5,7 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { PokeListComponent } from './components/PokeListComponent';
 import { PokeCardComponent } from './components/PokeCardComponent';
 import { NavComponent } from './components/NavComponent';
+import { PokedexComponent } from './components/PokedexComponent';
 import { UserContext } from './hooks/UserContext';
 import Musica from './music/pokemon.mp3'
 import Play from './images/play.png'
@@ -63,8 +64,17 @@ function App() {
             <>
               <PokeCardComponent/>
             </>
-          }
+          }          
         />
+        <Route path="/PokeDex" 
+          element= { 
+          <>
+            <PokedexComponent/>
+          </>
+        }>
+          
+        </Route>
+
       </Routes>
       </UserContext.Provider>
     </BrowserRouter>
