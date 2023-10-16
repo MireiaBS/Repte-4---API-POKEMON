@@ -28,14 +28,19 @@ body {
 
 .return {
 
-    width: 3cm;
-    height: 3cm;
-    position: absolute;
+    width: 2cm;
+    height: 2cm;
 }
 
 .links {
     text-decoration: none;
     color: black
+}
+
+.titulo-pregunta{
+    color:white;
+    font-size: xx-large;
+
 }
 
 .sub-list {
@@ -52,8 +57,8 @@ body {
 
 }
 h2 {
- padding-left: 0.5cm;
- margin-bottom: -0.5cm;
+    padding-left: 0.5cm;
+    margin-bottom: -0.5cm;
 }
 
 h1 {
@@ -93,7 +98,7 @@ h1 {
 h1 {
     color:white;
 }
-.pokedex {
+.botonPokedex {
     color: rgb(7, 109, 92);
     font-size: 300%;
     font-weight: 600;
@@ -107,9 +112,61 @@ h1 {
     text-decoration: none;
   
 }
+
+.returnPokedex {
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.allContainerPokedex {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.972);   
+    border-radius: 35px;
+    padding: 1cm;
+}
+
 .pokedex:hover {
     background-color:rgb(7, 109, 92) ;
     color:white
+}
+.divInputPregunta {
+    width: 100%;
+}
+
+.inputPregunta {
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.579);
+    padding: 10px;
+    width: max-content;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.buttonBuscarPokedex {
+    padding: 5px;
+    border: solid 2px rgb(7, 109, 92);
+    border-radius: 7px;
+    color:rgb(7, 109, 92);
+    font-size: large;
+}
+
+.buttonBuscarPokedex:hover {
+    color:white;
+    background-color: rgb(7, 109, 92);
+}
+
+.inputPregunta::placeholder {
+    color:white;
+    font-size: small;
+}
+
+.div-boton-buscarPokedex {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 .boton-play {
@@ -456,4 +513,10 @@ td {
 .fairy:active {
     background-color: rgb(230, 47, 102);
     color: white
+}
+
+.botonPokedex:hover {
+    color:white;
+    background-color: rgb(7, 109, 92);
+
 }

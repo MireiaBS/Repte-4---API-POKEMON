@@ -31,7 +31,7 @@ export const NavComponent = () => {
             </div>
             <div className='nav'>                
                 <img src={logo} alt='Logo PokeMon' className='logo' />  
-                <Link className='pokedex' to="/PokeDex" placeholder='pokedex' >PokéDex</Link>            
+                <Link className='botonPokedex' to="/PokeDex" placeholder='pokedex' >PokéDex</Link>            
             </div>
             <div className='nav'>
                 <input type='text' placeholder='Busca un Pokémon!' onChange={searchPokemon} className='margin'></input>
