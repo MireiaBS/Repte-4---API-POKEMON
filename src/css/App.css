@@ -77,9 +77,9 @@ h1 {
 .nav {
     display: flex;
     margin-bottom: 1cm;
-    padding-left: 1cm;
     align-items: center;
     justify-content: center;
+   
 }
 
 .margin {
