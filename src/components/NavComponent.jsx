@@ -33,7 +33,7 @@ export const NavComponent = () => {
             <div className='nav'>
                 <input type='text' placeholder='Busca un Pokémon!' onChange={searchPokemon} className='margin'></input>
             </div>
-            <div className='nav'>
+            <div className='nav display-buton-type'>
                 <button className='boton all' id='all' onClick={filterPokemon}>ALL</button>
                 <button className='boton normal'id='normal' onClick={filterPokemon}>Normal</button>
                 <button className='boton fire' id='fire' onClick={filterPokemon}>Fire</button>
